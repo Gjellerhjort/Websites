@@ -1,0 +1,26 @@
+body {
+  background-color: #333;
+
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    text-align: center;
+  }
+
+.wrapper { 
+    overflow: hidden; 
+    display: block; 
+    width: 100%; 
+} 
+
+.move { 
+    position: absolute; 
+    width: 150px; 
+    height: 150px; 
+    left: 0; 
+    top: 0; 
+    background-color: rgb(255, 0, 0); 
+} 
