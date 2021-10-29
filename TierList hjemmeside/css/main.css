@@ -1,4 +1,7 @@
 ul {
+    width: 100%;
+    max-width: 100%;
+    height: 60px;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -21,11 +24,22 @@ ul {
   
   /* Change the link color to #111 (black) on hover */
   li a:hover {
+    font-size: 30px;
     background-image: url(https://media.giphy.com/media/koyjGfQHIZQKk/giphy.gif);
   }
 
 h1 {
-    color: wheat;
+    color: rgb(255, 255, 255);
     font-size: 80px;
     text-align: center;
+    animation-name: RGB;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes RGB {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+  }
