@@ -7,27 +7,65 @@
         initial-scale=1.0, 
         user-scalable=no" />
         <title>Drag/Drop/Bounce</title>
+        <link rel="stylesheet" type="text/css" href="css/Tierlist.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <script type="text/js" href="js/script.js"></script>
 
         <ul >
           <li><a href="index.html">Home</a></li>
           <li><a href="Tierlist.html">Tierlist</a></li>
-          <li><a href="contact.asp">heste-nettet</a></li>
-          <li><a href="about.asp">About</a></li>
+          <li><a href="https://www.heste-nettet.dk/">heste-nettet</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
     </head>
     <body>
-        <div class="box" style="background-color: #ff7f7e;">S</div>
-        <div class="box" style="background-color: #ffbf7f;">A</div>
-        <div class="box" style="background-color: #ffdf80;">H</div>
-        <div class="box" style="background-color: #feff7f;">C</div>
-        <div class="box" style="background-color: #beff7f;">D</div>
-        <div id="box1">
-          <div class="wrapper"> 
-            <img class="move" src="img/Gustav.jpg">
-          </div>
+        <script>
+        function allowDrop(ev) {
+          ev.preventDefault();
+        }
+        
+        function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function drop(ev) {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+        }
+        </script>
+
+        <div id="div1" class="boxContainer" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <div class="box" style="background-color: #ff7f7e;">S</div>
         </div>
+        <div id="div2" class="boxContainer" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <div class="box" style="background-color: #ffbf7f;">A</div>
+        </div>
+        <div id="div3" class="boxContainer" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <div class="box" style="background-color: #ffdf80;">H</div>
+        </div>
+        <div id="div4" class="boxContainer" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <div class="box" style="background-color: #feff7f;">C</div>
+        </div>
+        <div id="div5" class="boxContainer" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <div class="box" style="background-color: #beff7f;">D</div>
+        </div>
+
+
+
+
+
+
+
+        <img id="drag1" class="DragBox" src="img/viet.png" draggable="true" ondragstart="drag(event)">
+        <img id="drag2" class="DragBox" src="img/Gustav.jpg" draggable="true" ondragstart="drag(event)">
+        <img id="drag3" class="DragBox" src="img/Anne.jpg" draggable="true" ondragstart="drag(event)">
+        <img id="drag4" class="DragBox" src="img/Jas.jpg" draggable="true" ondragstart="drag(event)">
+        <img id="drag5" class="DragBox" src="img/Marie.jpg" draggable="true" ondragstart="drag(event)">
+        <img id="drag6" class="DragBox" src="img/Dani.jpg" draggable="true" ondragstart="drag(event)">
+        <img id="drag7" class="DragBox" src="img/Kion.jpg" draggable="true" ondragstart="drag(event)">
+
+
 
 
 
