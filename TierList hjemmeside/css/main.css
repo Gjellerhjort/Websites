@@ -34,6 +34,7 @@ h1 {
     text-align: center;
     animation-name: RGB;
     animation-duration: 2s;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
