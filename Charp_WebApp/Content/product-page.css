@@ -7,7 +7,6 @@
 /* Product Card */
 /* ------------ */
 .card {
-
     height: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
 }
@@ -41,18 +40,15 @@
         -o-transform: scale(1.2);
         -ms-transform: scale(1.2); /* IE 9 */
         transform: scale(1.2);
-    } 
+    }
 
+/* Product Title */
 h5 {
     padding-top: 5px;
     font-size: 18px;
 }
 
-.btn {
-    padding: 5px 25px;
-    margin-top: 10px;
-}
-
+/* Product Price */
 .price-tag {
     font-size: 15px;
     font-family: Arial;

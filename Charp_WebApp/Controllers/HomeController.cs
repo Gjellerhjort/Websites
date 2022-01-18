@@ -26,7 +26,7 @@ namespace Charp_WebApp.Controllers
 
             return View();
         }
-        public ActionResult Page()
+        public ActionResult ProductPage()
         {
             ViewBag.Message = "just a page";
 
