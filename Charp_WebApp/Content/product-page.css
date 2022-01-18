@@ -44,12 +44,15 @@
 
 /* Product Title */
 h5 {
+    margin-top: 1px;
     padding-top: 5px;
-    font-size: 18px;
+    font-size: 15px;
 }
 
-/* Product Price */
+/* Product Price tag */
 .price-tag {
+    margin-top: 5px;
+    margin-left: 5px;
     font-size: 15px;
     font-family: Arial;
 }
