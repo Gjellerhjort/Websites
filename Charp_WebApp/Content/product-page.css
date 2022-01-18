@@ -3,7 +3,9 @@
     padding: 0;
     margin: 0;
 }
-
+/* ------------ */
+/* Product Card */
+/* ------------ */
 .card {
 
     height: 100%;
@@ -17,17 +19,29 @@
     cursor: pointer;
 }
 
-img {
-    display: block;
-    border: 2px solid #fff;
+/* Product image */
+.image-box {
     width: 100%;
-    height: 184px;
-    transition: all 1.5s;
     overflow: hidden;
 }
-    img:hover {
+
+.image {
+    width: 100%;
+    height: 184px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+    .image:hover {
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        -ms-transform: scale(1.2); /* IE 9 */
         transform: scale(1.2);
-    }
+    } 
 
 h5 {
     padding-top: 5px;
