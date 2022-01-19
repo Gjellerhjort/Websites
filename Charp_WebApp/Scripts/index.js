@@ -1,4 +1,4 @@
-﻿(function () {
+﻿
     let items = document.querySelectorAll('.carousel .carousel-item')
 
     items.forEach((el) => {
@@ -14,4 +14,3 @@
             next = next.nextElementSibling
         }
     })
-})();
