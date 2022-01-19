@@ -13,7 +13,7 @@
     <script src="https://kit.fontawesome.com/e5f13be286.js" crossorigin="anonymous"></script>
     <!-- CSS -->
     @Styles.Render("~/Content/css")
-    @Styles.Render("~/Content/sidebar.css")
+    @Styles.Render("~/Content/layout.css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
@@ -21,7 +21,7 @@
     <header id="header" class="header fixed-top d-flex align-items-center">
 
         <div class="d-flex align-items-center justify-content-between">
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="~/Home/Index" class="logo d-flex align-items-center">
                 <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="">
                 <span class="d-none d-lg-block">LoppeMarket.dk</span>
             </a>
@@ -140,54 +140,47 @@
         <ul class="sidebar-nav" id="sidebar-nav">
 
             <li class="nav-item">
-                <a class="nav-link " href="~/Home/Index">
+                <a class="nav-link" href="~/Home/Index">
                     <i class="fas fa-th"></i>
                     <span>Home</span>
                 </a>
             </li><!-- End Home Nav -->
 
             <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="~/Home/ProductPage">
-                    <i class="fas fa-ellipsis-h"></i><span>Gennemse alle</span><i class="bi bi-chevron-down ms-auto"></i>
+                <a class="nav-link" href="~/Home/ProductPage">
+                    <i class="fas fa-ellipsis-h"></i><span>Gennemse alle</span>
                 </a>
-                <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                </ul>
             </li><!-- End Gennemse alle Nav -->
 
             <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="~/Home/ProductPage">
-                    <i class="fas fa-ellipsis-h"></i><span>Din konto</span><i class="bi bi-chevron-down ms-auto"></i>
+                <a class="nav-link" href="~/Home/Profile">
+                    <i class="fas fa-user-circle"></i><span>Din konto</span>
                 </a>
-                <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                </ul>
             </li><!-- End Din konto Nav -->
         </ul><!-- End Din konto Nav -->
         <hr>
         <p>Filtre</p>
         <hr />  <!-- Sidebar Nav end -->
-        <p>categories</p> <!-- ======= Sidebar Kategorier ======= -->
-
+        <!-- ======= Sidebar Kategorier ======= -->
+        <p>categories</p>
         <div class="category-nav">
             <ul class="sidebar-nav" id="sidebar-nav">
                 <li class="nav-item">
-                    <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="~/Home/ProductPage">
-                        <i class="fas fa-car"></i><span>Cars</span><i class="bi bi-chevron-down ms-auto"></i>
+                    <a class="nav-link" href="~/Home/ProductPage">
+                        <i class="fas fa-car"></i><span>Cars</span>
                     </a>
-                    <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                    </ul>
-                </li><!-- End Din konto Nav -->
+                </li>
                 <li class="nav-item">
-                    <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="~/Home/ProductPage">
-                        <i class="fas fa-home"></i><span>Houses</span><i class="bi bi-chevron-down ms-auto"></i>
+                    <a class="nav-link" href="~/Home/ProductPage">
+                        <i class="fas fa-home"></i><span>Houses</span>
                     </a>
-                    <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                    </ul>
-                </li><!-- End Din konto Nav -->
+                </li>
             </ul>
         </div>
 
     </aside><!-- End Sidebar-->
     <!-- ======= Content ======= -->
+
     <main id="main" class="main">
         @RenderBody()
     </main> <!-- Content End -->

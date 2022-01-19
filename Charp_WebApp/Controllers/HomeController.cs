@@ -32,5 +32,11 @@ namespace Charp_WebApp.Controllers
 
             return View();
         }
+        public ActionResult Profile()
+        {
+            ViewBag.Message = "just a page";
+
+            return View();
+        }
     }
 }
