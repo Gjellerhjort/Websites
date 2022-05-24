@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/admin/Documents/Projects/Github/Websites/Hackersmasion
 build_property._RazorSourceGeneratorDebug = 
 
+[/home/admin/Documents/Projects/Github/Websites/Hackersmasion/Views/Home/Compete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Db21wZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/admin/Documents/Projects/Github/Websites/Hackersmasion/Views/Home/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9EYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

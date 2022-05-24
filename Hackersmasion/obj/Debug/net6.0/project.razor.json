@@ -16308,6 +16308,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/admin/Documents/Projects/Github/Websites/Hackersmasion/Views/Home/Compete.cshtml",
+      "TargetPath": "Views\\Home\\Compete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/admin/Documents/Projects/Github/Websites/Hackersmasion/Views/Home/Play.cshtml",
       "TargetPath": "Views\\Home\\Play.cshtml",
       "FileKind": "mvc"

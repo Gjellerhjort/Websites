@@ -1,40 +1,45 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Hackersmansion</title>
+    <link rel="icon" type="image/x-icon" href="~/favicon.ico">
+    <!-- Styles -->
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Hackersmansion.styles.css" asp-append-version="true" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/e5f13be286.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+    <!-- navbar -->
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Dashboard">Hackersmansion</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Dashboard">Dashboard</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Learn">Learn</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Play">Play</a>
-                        </li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-shrink py-3" id="mainNav" style="background: var(--bs-dark);border-color: var(--ref-gray-300);border-top-color: rgb(45,;border-right-color: 45,;border-bottom-color: 45);border-left-color: 45,;">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+           <span style="color: rgba(255,255,255,0.9);">Hackermasion</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link actice" asp-area="" asp-controller="Home"asp-action="Dashboard" style="color: rgba(255,255,255,0.9);">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link active" asp-area="" asp-controller="Home"asp-action="Learn" style="color: rgba(255,255,255,0.9);">Learn</a></li>
+                    <li class="nav-item"><a class="nav-link active" asp-area="" asp-controller="Home"asp-action="Play" style="color: rgba(255,255,255,0.9);">Play</a></li>
+                    <li class="nav-item"><a class="nav-link active" asp-area="" asp-controller="Home"asp-action="Compete" style="color: rgba(255,255,255,0.9);">Compete</a></li>
+                    <li class="nav-item"><a class="nav-link active" asp-area="" asp-controller="Home"asp-action="Compete" style="color: rgba(255,255,255,0.9);">Other</a></li>
+                </ul><a class="btn btn-primary shadow" role="button" href="signup.html">Sign up</a>
             </div>
-        </nav>
+        </div>
+    </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div class="content pt-3">
+        <main role="main" class="">
             @RenderBody()
         </main>
     </div>
@@ -49,4 +54,5 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

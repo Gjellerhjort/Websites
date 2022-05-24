@@ -30,3 +30,6 @@
 /home/admin/Documents/Projects/Github/Websites/Hackersmasion/bin/Debug/net6.0/MySqlConnector.dll
 /home/admin/Documents/Projects/Github/Websites/Hackersmasion/bin/Debug/net6.0/Pomelo.EntityFrameworkCore.MySql.dll
 /home/admin/Documents/Projects/Github/Websites/Hackersmasion/obj/Debug/net6.0/Hackersmansion.csproj.CopyComplete
+/home/admin/Documents/Projects/Github/Websites/Hackersmasion/bin/Debug/net6.0/Humanizer.dll
+/home/admin/Documents/Projects/Github/Websites/Hackersmasion/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
+/home/admin/Documents/Projects/Github/Websites/Hackersmasion/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
