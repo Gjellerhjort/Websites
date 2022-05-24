@@ -16338,6 +16338,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/admin/Documents/Projects/Github/Websites/Hackersmasion/Views/Home/Other.cshtml",
+      "TargetPath": "Views\\Home\\Other.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/admin/Documents/Projects/Github/Websites/Hackersmasion/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
