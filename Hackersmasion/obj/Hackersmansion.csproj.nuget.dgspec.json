@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[6.0.5, )"
             },
+            "Microsoft.jQuery.Unobtrusive.Ajax": {
+              "target": "Package",
+              "version": "[3.2.6, )"
+            },
             "pomelo.entityframeworkcore.mysql": {
               "target": "Package",
               "version": "[6.0.1, )"

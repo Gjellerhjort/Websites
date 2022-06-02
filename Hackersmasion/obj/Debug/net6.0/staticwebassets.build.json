@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GPDuEcpGZGDesj4RrDIUK/0/1i36NibLcqt/W7OVvts=",
+  "Hash": "Yhb5BLZ7bcXhbQpMF+/vD0sWgbjXB6eK9NFIPLBL3oE=",
   "Source": "Hackersmansion",
   "BasePath": "_content/Hackersmansion",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/home/admin/Documents/Projects/Github/Websites/Hackersmasion/wwwroot/js/bs-init.js",
+      "SourceId": "Hackersmansion",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/admin/Documents/Projects/Github/Websites/Hackersmasion/wwwroot/",
+      "BasePath": "_content/Hackersmansion",
+      "RelativePath": "js/bs-init.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/bs-init.js"
+    },
+    {
+      "Identity": "/home/admin/Documents/Projects/Github/Websites/Hackersmasion/wwwroot/js/chart.min.js",
+      "SourceId": "Hackersmansion",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/admin/Documents/Projects/Github/Websites/Hackersmasion/wwwroot/",
+      "BasePath": "_content/Hackersmansion",
+      "RelativePath": "js/chart.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/chart.min.js"
     },
     {
       "Identity": "/home/admin/Documents/Projects/Github/Websites/Hackersmasion/wwwroot/js/site.js",

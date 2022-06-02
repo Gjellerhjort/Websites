@@ -16,7 +16,8 @@ public class HomeController : Controller
 
     public IActionResult Dashboard()
     {
-        return View();
+        List<Challenge> challenges = (from challenge in this.Context.Challenge.Take(3) select challenge).ToList();
+        return View(challenges);
     }
 
     public IActionResult Learn()
@@ -25,7 +26,7 @@ public class HomeController : Controller
     }
     public IActionResult Play()
     {
-        List<Challenge> challenges = (from challenge in this.Context.Challenge.Take(10) select challenge).ToList();
+        List<Challenge> challenges = (from challenge in this.Context.Challenge select challenge).ToList();
         return View(challenges);
     }
 

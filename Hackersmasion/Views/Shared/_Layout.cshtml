@@ -17,6 +17,7 @@
         rel="stylesheet">
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/e5f13be286.js" crossorigin="anonymous"></script>
+    @RenderSection("scripts", required: false)
 </head>
 
 <body>
@@ -25,7 +26,7 @@
     <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-shrink py-3" id="mainNav" style="background: var(--bs-dark);border-color: var(--ref-gray-300);border-top-color: rgb(45,;border-right-color: 45,;border-bottom-color: 45);border-left-color: 45,;">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="/">
-           <span style="color: rgba(255,255,255,0.9);">Hackermasion</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+           <span style="color: rgba(255,255,255,0.9);">Hackermansion</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link actice" asp-area="" asp-controller="Home"asp-action="Dashboard" style="color: rgba(255,255,255,0.9);">Dashboard</a></li>
@@ -49,10 +50,11 @@
             &copy; 2022 - Hackersmansion - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script> 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+    <!--await RenderSectionAsync("Scripts", required: false)-->
 </body>
 
 </html>
