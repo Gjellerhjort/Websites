@@ -124,12 +124,12 @@
             </div>
         </div>
 
-        <div class="container"></div>
+        <div class="container">
+        <div class="row row-cols-3">
         @foreach (Challenge challenges in Model)
         {
-        <div class="card-group row pt-2">
-            <div class="col-lg-6 col-xl-4">
-                <div class="problem-list-card opacity-33 card">
+            <div class="pt-2">
+                <div class="card shadow">
                     <div class="card-header bg-white">
                         <div class="pull-right score body-md">
                             <h4 class="body-md mt-1 card-title">@challenges.Name</h4>
@@ -146,9 +146,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+                </div>
         }
+        </div>
+        </div>
     </div>  
 </div>
 </div>

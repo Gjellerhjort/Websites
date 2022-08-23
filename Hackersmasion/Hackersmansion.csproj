@@ -17,7 +17,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.jQuery.Unobtrusive.Ajax" Version="3.2.6" />
-    <PackageReference Include="pomelo.entityframeworkcore.mysql" Version="6.0.1" />
+    <PackageReference Include="pomelo.entityframeworkcore.mysql" Version="6.0.2" />
   </ItemGroup>
 
 </Project>

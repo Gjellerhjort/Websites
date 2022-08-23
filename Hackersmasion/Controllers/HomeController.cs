@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Hackersmansion.Models;
 using Hackersmansion.Data;
 
+
 namespace Hackersmansion.Controllers;
 public class HomeController : Controller
 {
@@ -26,7 +27,7 @@ public class HomeController : Controller
     }
     public IActionResult Play()
     {
-        List<Challenge> challenges = (from challenge in this.Context.Challenge select challenge).ToList();
+        List<Challenge> challenges = (from challenge in this.Context.Challenge.Take(9) select challenge).ToList();
         return View(challenges);
     }
 
@@ -40,10 +41,25 @@ public class HomeController : Controller
     {   
         return View();
     }
+    [HttpPost]
+    public IActionResult Other(List<Person> _data)
+        {
+            if (_data == null) 
+            {
+                _data = new List<Person>();
+            }
 
+            foreach (Person person in _data)
+            {
+                Context.Person.Add(person);
+            }
+            Context.SaveChanges();
+            return View();
+        }
+    /**
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Other([Bind("Id,Name,Email")] Person person)
+    public async Task<IActionResult> Other([Bind("Id,Name,Surname,Cocklength,Klasse,Alder,Email")] Person person)
     {
         if (ModelState.IsValid)
         {
@@ -53,7 +69,7 @@ public class HomeController : Controller
         }   
         return View();
     }
-
+    **/
     [HttpGet]
     public IActionResult CreateChallenge()
     {

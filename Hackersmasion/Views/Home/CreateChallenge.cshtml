@@ -1,0 +1,16 @@
+@model Hackersmansion.Models.Challenge
+@{
+    ViewData["Title"] = "Create Challenge";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="row pt-4">
+    <form asp-controller="Home" asp-action="CreateChallenge">
+        Name: <input asp-for="Name" type="text" /> <br />
+        Email: <input asp-for="Email " type="text" /><br />
+        Text: <textarea class="form-control" asp-for="Text"></textarea> <br />
+        Flag: <input asp-for="Flag" type="text" /><br />
+        <button type="submit" value="Other" class="btn btn-primary">Create</button>
+    </form>
+</div>
+

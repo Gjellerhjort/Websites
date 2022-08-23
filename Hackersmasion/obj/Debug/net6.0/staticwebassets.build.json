@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Yhb5BLZ7bcXhbQpMF+/vD0sWgbjXB6eK9NFIPLBL3oE=",
+  "Hash": "MZTG/D8ikXheoEANCWkeGUHQ+9zZS9t2u2Tad0AFa8E=",
   "Source": "Hackersmansion",
   "BasePath": "_content/Hackersmansion",
   "Mode": "Default",
@@ -117,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/chart.min.js"
+    },
+    {
+      "Identity": "/home/admin/Documents/Projects/Github/Websites/Hackersmasion/wwwroot/js/index.js",
+      "SourceId": "Hackersmansion",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/admin/Documents/Projects/Github/Websites/Hackersmasion/wwwroot/",
+      "BasePath": "_content/Hackersmansion",
+      "RelativePath": "js/index.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/index.js"
     },
     {
       "Identity": "/home/admin/Documents/Projects/Github/Websites/Hackersmasion/wwwroot/js/site.js",

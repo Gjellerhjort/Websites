@@ -1,0 +1,47 @@
+@model Hackersmansion.Models.Person
+
+@{
+    ViewData["Title"] = "Other";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="row pt-4">
+    Name: <input id="v1" value="" /> <br />
+    Surname: <input id="v2" value="" /> <br />
+    Cocklength:  <input id="v3" value="" /> <br />
+    Klasse: <input id="v4" value="" /> <br />
+    Alder:  <input id="v5" value="" /> <br />
+    Email: <input id="v6" value="" /> <br />
+    <button onclick="InsertDATA()">submit(jsondata)</button>
+
+@section scripts{ 
+ <script type="text/javascript">
+function InsertDATA() {
+    var _data = {
+        "Name": $('#v1').val(),
+        "Surname": $('#v2').val(),
+        "Cocklength": $('#v3').val(),
+        "Klasse": $('#v4').val(),
+        "Alder": $('#v5').val(),
+        "Email": $('#v6').val(),
+    };
+    $.ajax({
+        type: 'POST',
+        url: '/Home/Other',
+        data: JSON.stringify(_data),
+        contentType: 'application/json',
+        dataType: "JSON",
+        success: function(r) {
+            console.log("RESULT", r);
+        },
+        error: function(xhr, status, error) {           
+            var err = eval("(" + xhr.responseText + ")");
+            alert(err.Message);
+        }
+    });
+} 
+</script>
+}
+
+</div>
+    
